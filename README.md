@@ -12,6 +12,27 @@ This workflow performs the following steps:
 1. The `setup-java` step configures the Java 11 JDK by Adoptium.
 1. The "Build with Maven" step runs the Maven package target in non-interactive mode to ensure that your code builds, tests pass, and a package can be created.
 
+## How to run
+
+### Installation
+```bash
+git clone https://github.com/maxmyk/MoreOOP_lab4
+```
+
+### Running tests and Demo(game manager)
+ - tests
+```bash
+cd MoreOOP_lab4
+mvn clean install
+```
+ - Demo
+```bash
+cd MoreOOP_lab4
+mvn clean install -DskipTests
+mvn exec:java -Dexec.mainClass="Demo"
+```
+
+
 ## Task
 Implement the heroes game in text mode
 - class Character 
